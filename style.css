@@ -1,0 +1,56 @@
+body {
+    font-family: 'PT Serif', serif;
+    font-size: 24px;
+
+    opacity: 0%;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: fadeIn 2s 0s 1 ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 100%;
+
+    }
+  }
+  
+
+.heading {
+    font-family: 'Shalimar', cursive;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: red;
+    text-shadow: 1px 1px 2px black;
+    animation: spin 3s 0s 1 ease-in-out;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateX(360deg);
+    }    
+}
+
+img {
+    width: 200px !important;
+    height: 200px !important;
+    margin: auto;
+    transition: 1s;
+}
+
+img:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
+}
+
+.card {
+    margin: 10px auto;
+    box-shadow: 10px 10px 15px silver;
+    border-radius: 20px !important;
+    overflow: hidden;
+}
+
+.card h5 {
+    color: blue;
+    text-align: center;
+}
